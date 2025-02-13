@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+     int i,n,r,c,s=0;
+     printf("enter n \n");
+     scanf("%d",&n);
+     c=n;
+     while(n>0)
+     {
+         r= n%10;
+        s= r+(s*10);
+         n=n/10;
+         
+     }
+     if (s==c){
+         printf("the no %d is palandrone",c);
+         
+     }
+     else {
+         printf("not palandrone");
+         
+     }
+         return 0;
+}
